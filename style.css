@@ -635,8 +635,8 @@ video {
   height: 100%;
 }
 
-.min-h-full {
-  min-height: 100%;
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 
 .w-5 {
@@ -1248,6 +1248,10 @@ video {
 
   .lg\:ml-auto {
     margin-left: auto;
+  }
+
+  .lg\:max-w-\[60vw\] {
+    max-width: 60vw;
   }
 
   .lg\:flex-1 {
