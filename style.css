@@ -33,6 +33,96 @@
 5. Use the user's configured `sans` font-feature-settings by default.
 */
 
+@font-face {
+  font-family: 'TT Firs Neue Trl Regular';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial Regular.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl Thin';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial Thin.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl ExtraLight';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl Light';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial Light.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl Medium';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial Medium.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl DemiBold';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial DemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl Bold';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial Bold.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl ExtraBold';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'TT Firs Neue Trl Black';
+
+  font-style: normal;
+
+  font-weight: normal;
+
+  src: url('fonts/TT Firs Neue Trial Black.ttf');
+}
+
 html {
   line-height: 1.5;
   /* 1 */
@@ -43,7 +133,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: TT Firs Neue Trial Var Roman, sans-serif;
+  font-family: "TT Firs Neue Trl Regular", sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -220,6 +310,7 @@ button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
+  appearance: button;
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -267,6 +358,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 */
 
 [type='search'] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -398,9 +490,6 @@ iframe,
 embed,
 object {
   display: block;
-  /* 1 */
-  vertical-align: middle;
-  /* 2 */
 }
 
 /*
@@ -635,8 +724,8 @@ video {
   height: 100%;
 }
 
-.min-h-\[100vh\] {
-  min-height: 100vh;
+.min-h-full {
+  min-height: 100%;
 }
 
 .w-5 {
@@ -961,115 +1050,7 @@ video {
   display: none;
 }
 
-@font-face {
-  font-family: 'TT Firs Neue Trl Regular';
 
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl Regular'), url('TT Firs Neue Trial Regular.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl Thin';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl Thin'), url('TT Firs Neue Trial Thin.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl ExtraLight';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl ExtraLight'), url('TT Firs Neue Trial ExtraLight.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl Light';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl Light'), url('TT Firs Neue Trial Light.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl Medium';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl Medium'), url('TT Firs Neue Trial Medium.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl DemiBold';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl DemiBold'), url('TT Firs Neue Trial DemiBold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl Bold';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl Bold'), url('TT Firs Neue Trial Bold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl ExtraBold';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl ExtraBold'), url('TT Firs Neue Trial ExtraBold.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trl Black';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trl Black'), url('TT Firs Neue Trial Black.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trial Var Roman Regular';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trial Var Roman Regular'), url('TT Firs Neue Trial Var Roman.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'TT Firs Neue Trial Var Italic Regular';
-
-  font-style: normal;
-
-  font-weight: normal;
-
-  src: local('TT Firs Neue Trial Var Italic Regular'), url('TT Firs Neue Trial Var Italic.woff') format('woff');
-}
 
 .hover\:translate-x-1:hover {
   --tw-translate-x: 0.25rem;
@@ -1248,10 +1229,6 @@ video {
 
   .lg\:ml-auto {
     margin-left: auto;
-  }
-
-  .lg\:max-w-\[60vw\] {
-    max-width: 60vw;
   }
 
   .lg\:flex-1 {
