@@ -715,6 +715,10 @@ video {
   flex-grow: 1;
 }
 
+.animate-bouncy {
+  animation: bouncy 1s infinite;
+}
+
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -1047,6 +1051,10 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.delay-75 {
+  transition-delay: 75ms;
 }
 
 .duration-300 {
