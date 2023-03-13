@@ -1211,7 +1211,7 @@ video {
 
   font-weight: normal;
 
-  src: url('/TT Firs Neue Trial Regular.5cd538d1.woff');
+  src: url('fonts/TT Firs Neue Trial Regular.woff');
 }
 
 @font-face {
@@ -1221,7 +1221,7 @@ video {
 
   font-weight: normal;
 
-  src: url('/TT Firs Neue Trial ExtraLight.37b062b6.woff');
+  src: url('fonts/TT Firs Neue Trial ExtraLight.woff');
 }
 
 @font-face {
@@ -1231,7 +1231,7 @@ video {
 
   font-weight: normal;
 
-  src: url('/TT Firs Neue Trial Medium.1d10cf72.woff');
+  src: url('fonts/TT Firs Neue Trial Medium.woff');
 }
 
 @keyframes bounceright {
@@ -1740,5 +1740,3 @@ video {
     line-height: 1;
   }
 }
-
-/*# sourceMappingURL=/style.e308ff8e.css.map */
