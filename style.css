@@ -889,10 +889,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.border-t-2 {
-  border-top-width: 2px;
-}
-
 .border-dashed {
   border-style: dashed;
 }
