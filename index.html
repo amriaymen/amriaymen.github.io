@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sketch n'go - Subscription based design services</title>
-  <meta name="description" content="The #1 Middle eastern cost effective, flexible & consistent high quality design work for agencies, startups, and entrepreneurs on an ongoing basis." />
+  <meta name="description"
+    content="The #1 Middle eastern cost effective, flexible & consistent high quality design work for agencies, startups, and entrepreneurs on an ongoing basis." />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/x-icon" href="assets/mini_logo.svg">
 </head>
@@ -21,12 +22,11 @@
             <a href="#main" class="-m-1.5 p-1.5 inline-flex items-center">
               <span class="sr-only">Sketchngo</span>
               <img class="h-6 hidden md:flex" src="assets/logo.svg" alt="logo">
-              <img class="h-8 flex md:hidden animate-spin-slow hover:ease-in-out" src="assets/mini_logo.svg"
-                alt="logo">
+              <img class="h-8 flex md:hidden animate-spin-slow hover:ease-in-out" src="assets/mini_logo.svg" alt="logo">
             </a>
           </div>
-          <button @click="open = !open"
-            name="navmenu" class=" inline-flex items-center justify-center p-2 text-gray-400 hover:text-primary  focus:outline-none focus:text-white lg:hidden">
+          <button @click="open = !open" name="navmenu"
+            class=" inline-flex items-center justify-center p-2 text-gray-400 hover:text-primary  focus:outline-none focus:text-white lg:hidden">
             <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
               <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round"
                 stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -406,12 +406,16 @@
           one-stop-shop for all things design.
         </p>
       </div>
-      <div class="grid lg:grid-cols-2 gap-12 mb-6 xl:max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 items-start gap-12 mb-6 xl:max-w-7xl mx-auto">
         <div class="grid gap-6">
           <h3 class=" text-2xl lg:text-3xl text-background font-normal">
             UX/UI Design
           </h3>
           <div class="grid gap-2">
+            <div class="flex items-center gap-2">
+              <img src="assets/check 1.svg" alt="check_mark">
+              <p>No-code website builders | Webflow, Framer, Bubble.io</p>
+            </div>
             <div class="flex items-center gap-2">
               <img src="assets/check 1.svg" alt="check_mark">
               <p>Website</p>
@@ -439,7 +443,7 @@
           </div>
         </div>
         <div class="grid gap-6">
-          <div class="flex gap-2 items-center">
+          <div class="flex gap-2 items-end">
             <h3 class="text-2xl lg:text-3xl text-background font-normal">
               Promo video & Animation
             </h3>
@@ -473,7 +477,8 @@
             <div class="flex items-center gap-2">
               <img src="assets/check 1.svg" alt="check_mark">
               <p>Rive.app / Lottifiles</p>
-              </p>
+              <p class="text-center float-righ px-3 py-0 md:py-1 text-white bg-background text-sm rounded-full">
+                🔥🔥🔥</p>
             </div>
           </div>
         </div>
@@ -807,7 +812,7 @@
 
     <div
       class="text-white bg-background px-6 md:px-10 xl:px-48 py-6 pt-12 md:pt-20 xl:pt-36 md:pb-10 xl:pb-16 font-normal">
-      <div class="grid md:flex gap-6 max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-6 max-w-7xl mx-auto">
         <div class="grid gap-6">
           <div>
             <h1 class="max-w-xl lg:max-w-2xl text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl">
@@ -827,7 +832,7 @@
             </div>
           </div>
         </div>
-        <div class="grid gap-6 pt-2 items-stretch">
+        <div class="grid gap-6 pt-2 items-stretch justify-end">
           <div class="grid gap-2">
             <div class="flex gap-2">
               <div class="">
@@ -842,8 +847,16 @@
                 <a class="hover:text-primary" href="https://wa.me/25436155">+ 216 25 436 155</a>
               </div>
             </div>
-            <div class="font-medium text-gray-400">
-              Privacy policy
+            <div class="flex gap-2">
+              <div class="font-medium text-gray-400">
+                Terms & Conditions
+              </div>
+              <div>
+                <p class="font-medium text-gray-500">|</p>
+              </div>
+              <div class="font-medium text-gray-400">
+                Privacy policy
+              </div>
             </div>
           </div>
           <div class="font-medium flex gap-4 md:gap-6 items-center">
@@ -856,7 +869,7 @@
         </div>
       </div>
       <div class="block gap-3 md:flex mt-6 md:mt-10 xl:mt-16 max-w-7xl md:mx-auto">
-        <p>Sketch n'go<span class="ml-3 text-gray-500">© All rights reserved 2023.</span></p>
+        <p>Sketch n'go<span class="ml-3 text-gray-500">Copyright © All rights reserved 2023.</span></p>
         <p>Made with ❤️ in Djerba.</p>
       </div>
     </div>
