@@ -73,9 +73,11 @@
         <div class="text-center md:mt-20 lg:mt-32">
           <div class="mx-auto md:max-w-3xl xl:max-w-6xl">
             <div class="w-auto">
-              <p class="inline-flex px-3 py-1 md:px-4 md:py-2 bg-gray-900 border-[1px] border-primary text-primary text-sm md:text-lg font-normal rounded-full">Only 2 spots remaining
-            </p>
-          </div>
+              <p
+                class="inline-flex px-3 py-1 md:px-4 md:py-2 bg-gray-900 border-[1px] border-primary text-primary text-sm md:text-lg font-normal rounded-full shadow-[0_0_5px] shadow-primary hover:shadow-[0_0_10px] transition">
+                Only 2 spots remaining
+              </p>
+            </div>
             <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal my-10 tracking-normal text-gray-100 ">
               Creative solutions
               for your ongoing design needs.</h1>
@@ -794,7 +796,7 @@
     </div>
     <!-- faqs section-->
 
-    <div class="text-background bg-primary px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
+    <!-- <div class="text-background bg-primary px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="mx-auto grid gap-12 text-center">
         <h1
           class="mx-auto lg:max-w-md xl:max-w-2xl text-background font-normal text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl">
@@ -812,7 +814,68 @@
         </div>
       </div>
     </div>
-    <!-- CTA recall section-->
+     CTA recall section-->
+
+    <div class="bg-background px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
+      <div class="grid lg:grid-cols-2 gap-24 xl:max-w-7xl mx-auto">
+        <div class="">
+          <h1 class="text-white text-5xl md:text-6xl xl:text-7xl mb-3">
+            Let's get started
+          </h1>
+          <p class="text-lg text-gray-500 mb-6">
+            Schedule your personal tour today! Transform the way you and your team approach design projects
+          </p>
+        </div>
+        <div class=" grid xl:max-w-8xl gap mx-auto font-normal text-3xl text-white">
+          <form
+            action="https://script.google.com/macros/s/AKfycbwy1vyOyAim7zajOSdokxQrc8rFCHjjWWlKsyTBMvAigCG_c4p-rMPTvXDrrpK-GWpd/exec"
+            method="post" class="grid gap-6 divide-y divide-shade">
+            <div>
+              <label class="inline mb-2" for="">My name is</label>
+              <input class="inline mb-2 font-extralight text-2xl text-white rounded-lg  bg-slate-800 px-4 py-2 focus:bg-background focus:ring-opacity-0 w-auto"
+                name="Name" type="text" placeholder="John Smith">
+              <label class="inline mb-2" for="">And I have a</label>
+              <input class="inline mb-2 font-extralight text-2xl rounded-lg text-white bg-slate-800 px-4 py-2 focus:bg-background focus:ring-opacity-0 w-auto"
+                name="Tasks" type="text" placeholder="website, mobile/web app, etc...">
+              <label class="inline mb-2" for="">that needs help. You can reach me at</label>
+              <input class="inline mb-2 font-extralight text-2xl text-white rounded-lg  bg-slate-800 px-4 py-2 focus:bg-background focus:ring-opacity-0 w-auto"
+                name="Email" type="text" placeholder="johny@smith.com">
+              <p class="inline">to get things started.</p>
+            </div>
+            <div class="p-6">
+              <button type="submit" href="#"
+                class="flex justify-self-end gap-2 self-end items-center text-primary font-extralight text-3xl rounded-lg hover:translate-x-1 transition">
+                <p>Send info</p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-auto h-9 animate-bounceright"
+                  viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                  <path fill-rule="evenodd"
+                    d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Contact form-->
+
+    <div class="bg-primary px-6 md:px-20 xl:px-48 py-8 md:py-12 xl:py-8 font-normal">
+      <div class="grid lg:grid-cols-3 gap-6 xl:max-w-7xl mx-auto items-center">
+        <div class="col-span-2 ">
+          <h1 class="text-background text-2xl md:text-3xl xl:text-4xl">
+            Confused? Book a 30 minutes call now!
+          </h1>
+        </div>
+        <div class="mx-auto">
+          <a class="flex px-8 py-4 bg-background font-normal text-lg text-white rounded-md hover:shadow-[0_0_10px] hover:shadow-background transition"
+            href="">
+            Book 30 min call
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Calendly-->
 
     <div
       class="text-white bg-background px-6 md:px-10 xl:px-48 py-6 pt-12 md:pt-20 xl:pt-36 md:pb-10 xl:pb-16 font-normal">
@@ -904,6 +967,12 @@
         }
       }));
     })
+
+    var input = document.querySelectorAll('input');
+    for (i = 0; i < input.length; i++) {
+      input[i].setAttribute('size', input[i].getAttribute('placeholder').length);
+    }
+
   </script>
   <script src="//unpkg.com/alpinejs" defer></script>
 </body>
