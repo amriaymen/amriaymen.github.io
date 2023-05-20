@@ -831,20 +831,20 @@
             action="https://script.google.com/macros/s/AKfycbwcvTJfX-g5TabAruaHjPj4Bb-GAUOmZ7q347hxMFOORxVNZQ1n2sDvu3_XF9uwBYxmkQ/exec"
             class="grid w-full gap-4 lg:gap-2 grid-cols-4 xl:max-w-8xl mx-auto">
             <input name="firstName" type="text" placeholder="First name"
-              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition ">
+              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition " required>
             <input name="lastName" type="text" placeholder="Last name"
-              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition ">
-            <input name="workEmail" type="text" placeholder="Work email"
-              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition ">
-            <input name="confirmEmail" type="text" placeholder="Confirm email"
-              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition ">
+              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition " required>
+            <input name="workEmail" type="email" placeholder="Work email"
+              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition " required>
+            <input name="confirmEmail" type="email" placeholder="Confirm email"
+              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition " required>
             <input name="companyName" type="text" placeholder="Company name"
-              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition ">
-            <input name="website" type="text" placeholder="Website"
-              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition ">
+              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition " required>
+            <input name="website" type="url" placeholder="Website"
+              class="w-full col-span-4 lg:col-span-2 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition " required>
             <textarea
               class="w-full col-span-4 bg-background text-lg font-normal text-white border-2 border-gray-600 px-4 py-2 xl:px-6 xl:py-4 rounded-xl group hover:bg-shade focus:placeholder:text-primary transition"
-              placeholder="How can we help?" name="description" id="" cols="30" rows="5"></textarea>
+              placeholder="How can we help?" name="description" id="" cols="30" rows="5" required></textarea>
             <div class="col-span-4">
               <button type="submit" name="submit"
                 class="inline-flex px-8 py-4 bg-primary font-normal text-lg text-background rounded-md hover:shadow-[0_0_10px] hover:shadow-background transition"
