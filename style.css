@@ -1736,11 +1736,6 @@ video {
     max-width: 1920px;
   }
 
-  .xl\:grid-cols-3 {
-    -ms-grid-columns: (minmax(0, 1fr))[3];
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .xl\:gap-10 {
     gap: 2.5rem;
   }
