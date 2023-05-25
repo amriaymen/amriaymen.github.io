@@ -37,6 +37,7 @@
         </div>
         <!-- logo states-->
 
+        <!-- Navbar-->
         <nav :class="{'flex': open, 'hidden': !open}"
           class="gap-6 lg:gap-8 xl:gap-12 mt-8 lg:mt-0 bg-background  font-normal text-base flex-col items-left flex-grow lg:pb-0 lg:flex lg:justify-end lg:flex-row hidden transition-all">
           <a class=" text-gray-300  hover:text-white lg:ml-auto transition-colors" href="recentwork">
@@ -66,8 +67,8 @@
         </nav>
       </div>
     </div>
-    <!-- Navbar-->
 
+    <!-- Hero section -->
     <main id="main" class="">
       <div class="relative px-6 lg:px-0 w-full">
         <div class="text-center md:mt-20 lg:mt-32">
@@ -93,7 +94,7 @@
                 your plan</a>
             </div>
             <div class="inline-flex my-2 md:my-5">
-              <a href="https://www.figma.com/proto/vdA7g9Ib6sqi9TZH0epRA9/Untitled?page-id=0%3A1&node-id=1-2&viewport=441%2C412%2C0.52&scaling=scale-down"
+              <a href="https://www.figma.com/proto/vdA7g9Ib6sqi9TZH0epRA9/Portfolio?page-id=0%3A1&type=design&node-id=121-2&viewport=530%2C246%2C0.22&scaling=min-zoom" target="_blank"
                 class="items-center px-8 py-4 text-white font-normal text-lg rounded-md inline-flex hover:translate-x-1 transition">
                 <p>See work samples</p>
                 <svg xmlns="http://www.w3.org/2000/svg" class="inline w-auto h-6 ml-2 animate-bounceright"
@@ -134,33 +135,38 @@
         </div>
       </div>
     </main>
-    <!-- Hero section -->
 
+    <!--Services preview -->
     <div class="bg-background my-6 md:my-0 px-6 md:px-10 xl:px-20 py-4 md:py-10 xl:py-20 font-normal">
       <div class="grid  xl:grid-cols-3 gap-4 md:gap-6 xl:gap-10 xl:max-w-[1920px] mx-auto">
         <div class="relative overflow-hidden rounded-xl hover:scale-95 transition duration-500 ease-in-out">
           <img
             class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-96 hover:scale-125 transition duration-500 ease-in-out"
             src="assets/1.webp">
-          <h3 class="absolute rounded-lg px-5 py-2 bg-background text-2xl text-white top-5 left-5">Branding</h3>
+          <h3 class="absolute rounded-lg px-5 py-2 bg-background text-2xl text-white top-5 left-5">
+            Branding
+          </h3>
         </div>
         <div class="relative overflow-hidden rounded-xl hover:scale-95 transition duration-500 ease-in-out">
           <img
             class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-96 hover:scale-125 transition duration-500 ease-in-out"
             src="assets/3.webp">
-          <h3 class="absolute rounded-lg px-5 py-2 bg-background text-2xl text-white top-5 left-5">UX/UI</h3>
+          <h3 class="absolute rounded-lg px-5 py-2 bg-background text-2xl text-white top-5 left-5">
+            UX/UI
+          </h3>
         </div>
         <div class="relative overflow-hidden rounded-xl hover:scale-95 transition duration-500 ease-in-out">
           <img
             class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-96 hover:scale-125 transition duration-500 ease-in-out"
             src="assets/2.webp">
-          <h3 class="absolute rounded-lg px-5 py-2 bg-background text-2xl text-white top-5 left-5">Animatetd explainers
+          <h3 class="absolute rounded-lg px-5 py-2 bg-background text-2xl text-white top-5 left-5">
+            Explainer videos
           </h3>
         </div>
       </div>
     </div>
-    <!--H-scrolling portfolio gallery -->
 
+    <!-- Steps to get onboard section-->
     <div class="bg-white px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="xl:max-w-7xl mx-auto">
         <h1 class="text-background text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-6">
@@ -178,8 +184,8 @@
         </p>
       </div>
     </div>
-    <!-- Steps to get onboard section-->
 
+    <!-- Benefits section-->
     <div class="bg-primary px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="grid lg:grid-cols-3 gap-6 xl:max-w-7xl mx-auto">
         <div class="">
@@ -257,8 +263,8 @@
         </div>
       </div>
     </div>
-    <!-- Benefits section-->
 
+    <!-- Maquee section-->
     <div class="bg-background scroll-smooth py-6 md:py-10">
       <marquee scrollamount="12" class="overflow-x-hidden">
         <div class="whitespace-nowrap inline-flex gap-12 items-center">
@@ -268,8 +274,8 @@
         </div>
       </marquee>
     </div>
-    <!-- Maquee section-->
 
+    <!-- Steps to get onboard section-->
     <div class="bg-white px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="xl:max-w-7xl mx-auto">
         <h1 class="max-w-xl lg:max-w-2xl text-background text-5xl md:text-5xl xl:text-6xl 2xl:text-7xl mb-6">
@@ -307,11 +313,11 @@
         </div>
       </div>
     </div>
-    <!-- Steps to get onboard section-->
 
+    <!-- Portfolio section-->
     <div id="recentwork" class="bg-background px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
-      <div class="grid lg:grid-cols-3 gap-6 xl:max-w-7xl mx-auto">
-        <div class="">
+      <div class="grid gap-6 md:gap-10 xl:max-w-7xl mx-auto">
+        <div class="max-w-2xl">
           <h1 class="text-white text-5xl md:text-6xl xl:text-7xl mb-3">
             Recent work
           </h1>
@@ -320,7 +326,7 @@
             masterpieces.
           </p>
           <div class="flex">
-            <a href="https://www.figma.com/proto/vdA7g9Ib6sqi9TZH0epRA9/Untitled?page-id=0%3A1&node-id=1-2&viewport=441%2C412%2C0.52&scaling=scale-down"
+            <a href="https://www.figma.com/proto/vdA7g9Ib6sqi9TZH0epRA9/Portfolio?page-id=0%3A1&type=design&node-id=121-2&viewport=530%2C246%2C0.22&scaling=min-zoom" target="_blank"
               class="w-full md:w-auto px-8 py-4 bg-white font-normal text-lg text-background rounded-md hover:shadow-[0_0_10px] hover:shadow-primary transition">View
               recent work<svg xmlns="http://www.w3.org/2000/svg" class="inline w-auto h-6 fill-background ml-1"
                 viewBox="0 0 20 20">
@@ -331,76 +337,37 @@
             </a>
           </div>
         </div>
-        <div class="col-span-2 gap-6 grid md:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-          <div class="w-auto h-60 self-stretch bg-background border-2 border-accent rounded-xl p-4">
-            <div class="animate-pulse flex space-x-4">
-              <div class="flex-1 space-y-6 py-1">
-                <div class="space-y-3">
-                  <p class="rounded-lg bg-accent py-1 px-3 text-background font-medium text-2xl">Under construction!</p>
-                  <div class="grid grid-cols-3 gap-4">
-                    <div class="h-4 bg-accent rounded col-span-2"></div>
-                    <div class="h-4 bg-accent rounded col-span-1"></div>
-                  </div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                </div>
-              </div>
-            </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <div class="relative overflow-hidden rounded-xl transition duration-500 ease-in-out">
+            <img
+              class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-[36rem] hover:scale-105 transition duration-500 ease-in-out"
+              src="assets/4.webp">
           </div>
-          <div class="w-auto h-60 self-stretch bg-background border-2 border-accent rounded-xl p-4">
-            <div class="animate-pulse flex space-x-4">
-              <div class="flex-1 space-y-6 py-1">
-                <div class="space-y-3">
-                  <p class="rounded-lg bg-accent py-1 px-3 text-accent font-medium text-2xl">Under construction!</p>
-                  <div class="grid grid-cols-3 gap-4">
-                    <div class="h-4 bg-accent rounded col-span-2"></div>
-                    <div class="h-4 bg-accent rounded col-span-1"></div>
-                  </div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                </div>
-              </div>
-            </div>
+          <div class="relative overflow-hidden rounded-xl transition duration-500 ease-in-out">
+            <img
+              class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-[36rem] hover:scale-105 transition duration-500 ease-in-out"
+              src="assets/5.webp">
           </div>
-          <div class="hidden md:block w-auto h-60 self-stretch bg-background border-2 border-accent rounded-xl p-4">
-            <div class="animate-pulse flex space-x-4">
-              <div class="flex-1 space-y-6 py-1">
-                <div class="space-y-3">
-                  <p class="rounded-lg bg-accent py-1 px-3 text-accent font-medium text-2xl">Under construction!</p>
-                  <div class="grid grid-cols-3 gap-4">
-                    <div class="h-4 bg-accent rounded col-span-2"></div>
-                    <div class="h-4 bg-accent rounded col-span-1"></div>
-                  </div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                </div>
-              </div>
-            </div>
+          <div class="relative overflow-hidden rounded-xl transition duration-500 ease-in-out">
+            <img
+              class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-[36rem] hover:scale-105 transition duration-500 ease-in-out"
+              src="assets/6.webp">
           </div>
-          <div class="hidden md:block w-auto h-60 self-stretch bg-background border-2 border-accent rounded-xl p-4">
-            <div class="animate-pulse flex space-x-4">
-              <div class="flex-1 space-y-6 py-1">
-                <div class="space-y-3">
-                  <p class="rounded-lg bg-accent py-1 px-3 text-accent font-medium text-2xl">Under construction!</p>
-                  <div class="grid grid-cols-3 gap-4">
-                    <div class="h-4 bg-accent rounded col-span-2"></div>
-                    <div class="h-4 bg-accent rounded col-span-1"></div>
-                  </div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                  <div class="h-4 bg-accent rounded"></div>
-                </div>
-              </div>
-            </div>
+          <div class="relative overflow-hidden rounded-xl transition duration-500 ease-in-out">
+            <img
+              class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-[36rem] hover:scale-105 transition duration-500 ease-in-out"
+              src="assets/7.webp">
+          </div>
+          <div class="relative overflow-hidden rounded-xl transition duration-500 ease-in-out">
+            <img
+              class="object-cover inset-0 object-center w-full h-56 md:h-64 xl:h-[36rem] hover:scale-105 transition duration-500 ease-in-out"
+              src="assets/8.webp">
           </div>
         </div>
       </div>
     </div>
-    <!-- Portfolio section-->
 
+    <!-- Services section-->
     <div id="services" class="bg-white px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="xl:max-w-7xl mb-6 mx-auto">
         <h1 class="max-w-xl lg:max-w-2xl text-background text-5xl md:text-5xl xl:text-6xl 2xl:text-7xl mb-6">
@@ -529,8 +496,8 @@
         </div>
       </div>
     </div>
-    <!-- Services section-->
 
+    <!-- Pricing section-->
     <div id="pricing" class="text-white bg-background px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="xl:max-w-7xl mx-auto mb-16">
         <h1 class="max-w-xl lg:max-w-2xl text-white font-normal text-5xl md:text-5xl xl:text-6xl 2xl:text-7xl mb-6">
@@ -644,8 +611,8 @@
         </div>
       </div>
     </div>
-    <!-- Pricing section-->
 
+    <!-- faqs section-->
     <div id="faqs" class="bg-white px-6 md:px-20 xl:px-48 py-12 md:py-20 xl:py-36 font-normal">
       <div class="grid lg:grid-cols-3 xl:max-w-7xl mx-auto gap-6 md:gap-10">
         <div class="xl:max-w-7xl ">
@@ -794,8 +761,8 @@
         </div>
       </div>
     </div>
-    <!-- faqs section-->
 
+    <!-- Calendly-->
     <div class="bg-primary px-6 md:px-20 xl:px-48 py-8 md:py-12 xl:py-8 font-normal">
       <div class="grid lg:grid-cols-3 gap-6 xl:max-w-7xl mx-auto items-center">
         <div class="col-span-2 ">
@@ -803,16 +770,16 @@
             Confused? Book a 30 minutes call now!
           </h1>
         </div>
-        <div class="mx-auto">
-          <a class="flex px-8 py-4 bg-background font-normal text-lg text-white rounded-md hover:shadow-[0_0_10px] hover:shadow-background transition"
+        <div class="ml-auto">
+          <a class="inline-flex md:w-auto px-8 py-4 bg-background font-normal text-lg text-white rounded-md hover:shadow-[0_0_10px] hover:shadow-background transition"
             href="https://calendly.com/sketchngo/30min">
             Book 30 min call
           </a>
         </div>
       </div>
     </div>
-    <!-- Calendly-->
 
+    <!-- Footer -->
     <div
       class="text-white bg-background px-6 md:px-10 xl:px-48 py-6 pt-12 md:pt-20 xl:pt-36 md:pb-10 xl:pb-16 font-normal">
       <div class="grid md:grid-cols-2 gap-6 max-w-7xl mx-auto">
@@ -836,7 +803,7 @@
             </div>
           </div>
         </div>
-        <div class="grid gap-6 pt-2 items-stretch justify-end">
+        <div class="grid gap-6 pt-2 items-stretch justify-start md:justify-end">
           <div class="grid gap-2">
             <div class="flex gap-2">
               <div class="">
@@ -878,7 +845,6 @@
         <p>Made with ❤️ in Djerba.</p>
       </div>
     </div>
-    <!-- Footer -->
 
   </div>
 
@@ -905,12 +871,6 @@
         }
       }));
     })
-
-    var input = document.querySelectorAll('input');
-    input[0].setAttribute('size', input[0].getAttribute('placeholder').length);
-    input[1].setAttribute('size', input[1].getAttribute('placeholder').length / 1.07);
-    input[2].setAttribute('size', input[2].getAttribute('placeholder').length * 1.1);
-
   </script>
   <script src="//unpkg.com/alpinejs" defer></script>
 </body>
