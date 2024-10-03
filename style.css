@@ -1535,6 +1535,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -1609,6 +1613,10 @@ html {
 
   .lg\:gap-12 {
     gap: 3rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:gap-8 {
